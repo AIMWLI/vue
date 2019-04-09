@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-bind</title>
+    <script src="../lib/vue.js"></script>
+</head>
+
+<body>
+<!--控制切换一个元素是否显示也相当简单-->
+<div id="app">
+    <span v-if="seen">当seen为true时才能看到这行字</span>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            seen: true
+        }
+    })
+</script>
+</body>
+</html>
